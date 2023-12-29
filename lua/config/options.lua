@@ -19,7 +19,6 @@ opt.wrap = true
 opt.signcolumn = 'yes'
 opt.list = true
 opt.listchars = { trail = '.', tab = '»-»' }
-opt.smoothscroll = true
 
 -- encoding
 vim.scriptencoding = 'utf-8'
