@@ -9,6 +9,8 @@ vim.scriptencoding = 'utf-8'
 opt.encoding = 'utf-8'
 opt.fileencoding = 'utf-8'
 
+opt.guicursor = ""
+
 -- scroll
 opt.scroll = 5
 
