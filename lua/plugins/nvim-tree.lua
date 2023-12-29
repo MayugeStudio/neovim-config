@@ -1,3 +1,4 @@
+local h = require("util.helper")
 return {
     'nvim-tree/nvim-tree.lua',
     config = function()
@@ -10,6 +11,7 @@ return {
                 group_empty = true,
             },
         })
+        h.nmap('<leader>e', ':NvimTreeToggle<CR>')
     end,
 }
 
