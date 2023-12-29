@@ -19,7 +19,7 @@ return {
                         fuzzy = true,
                     },
                 },
-                file_browser - {
+                file_browser = {
                     theme = "ivy",
                     hijack_netrw = true,
                     mappings = {
@@ -28,16 +28,16 @@ return {
                         },
                         ["n"] = {
 
-                        }
-                    }
+                        },
+                    },
                 }
             })
             require('telescope').load_extension('fzf')
-            local builtin = require("telescope.builtin")
-            nmap("<leader>ff", builtin.find_files)
-            nmap("<leader>fg", builtin.live_grep)
-            nmap("<leader>fB", ":Telescope file_browser")
-            nmap("<leader>gs", builtin.git_status)
+            local b = require("telescope.builtin")
+            nmap("<leader>ff", b.find_files)
+            nmap("<leader>fg", b.live_grep)
+            nmap("<leader>fB", ":Telescope file_browser<CR>")
+            nmap("<leader>gs", b.git_status)
         end
     }
 }
