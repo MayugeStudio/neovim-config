@@ -5,13 +5,6 @@ return {
         'nvim-telescope/telescope.nvim',
         tag='0.1.5',
         dependencies = 'nvim-lua/plenary.nvim',
-    },
-    {
-        'nvim-telescope/telescope-file-browser.nvim',
-    },
-    {
-        'nvim-telescope/telescope-fzf-native.nvim',
-        build = 'make',
         config = function()
             require('telescope').setup({
                 extensions = {
@@ -19,19 +12,13 @@ return {
                         fuzzy = true,
                     },
                 },
-                file_browser = {
-                    theme = "ivy",
-                    hijack_netrw = true,
-                    mappings = {
-                        ["i"] = {
-
-                        },
-                        ["n"] = {
-
-                        },
-                    },
-                }
             })
+        end,
+    },
+    {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        build = 'make',
+        config = function()
             require('telescope').load_extension('fzf')
             local b = require("telescope.builtin")
             nmap("<leader>ff", b.find_files)

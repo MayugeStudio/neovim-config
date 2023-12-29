@@ -1,0 +1,10 @@
+{
+    "signature.floatConfig": {
+        "border": true,
+        "rounded": true
+    },
+    "diagnostic.floatConfig": {
+        "border": true,
+        "rounded": true
+    }
+}

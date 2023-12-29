@@ -12,15 +12,9 @@ opt.fileencoding = 'utf-8'
 -- scroll
 opt.scroll = 5
 
-opt.title = true
-
 -- indent
 opt.autoindent = true
 opt.breakindent = true
-
--- 不可視文字可視化
-opt.list = true
-opt.listchars = { tab = '>>', trail = '-', nbsp = '+' }
 
 -- タブ, インデント
 opt.tabstop = 4
@@ -39,26 +33,25 @@ opt.completeopt = 'menuone,noinsert'
 
 -- row
 opt.number = true
-opt.signcolumn = 'yes'
 opt.relativenumber = true
 opt.cursorline = true
 
 -- view
 opt.ambiwidth = 'double'
-opt.wrap = true 
-opt.showtabline = 2
+opt.wrap = false
 opt.showmatch = true
 opt.helplang = 'ja', 'en'
-opt.updatetime = 200
 opt.clipboard = 'unnamedplus'
 opt.visualbell = true
-opt.signcolumn = 'yes'
-opt.hidden = true
-opt.swapfile = false
-opt.wrap = false
 
--- terminal
-opt.termguicolors = true
+-- floating window
+opt.winblend = 20
+
+-- updatetime
+opt.updatetime = 300
+
+-- signcolumn
+opt.signcolumn = 'yes'
 
 -- golang
 vim.api.nvim_exec([[
